@@ -1,77 +1,82 @@
+:root {
+    --primary: #cec8c8;
+    --secundary: #4f46e5;
+    --accebte: #8b5cf6;
+    --text: #1f2937;
+    --light: #f2f4f4f6;
+}
+
 * {
     margin: 0;
-    padding: 0;
+    padding: 8px;
     box-sizing: border-box;
 }
-header {
-    background-color: grey;
-    color: white;
-    text-align: center;
-    padding: 20px;
+
+
+body {
+    font-family: sans-serif, arial, system-ui;
+    font-size: 1rem;
 }
-nav {
-    background-color: #2980b9;
+
+header {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 35px;
+    text-align: right;
+    margin: 2px;
     padding: 10px;
 
 }
-nav ul {
-    list-style-type: none;
+
+
+.hero {
     display: flex;
+}
+
+.img {
+    height: 0%;
+    width: 0%;
+    max-width: 15%;
+    object-fit: cover;
+    border-radius: 2%;
+
+}
+
+.info {
+    display: flex;
+    text-align: center;
     justify-content: center;
 }
-nav ul li {
-    margin: 0 15px;
-}
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-nav ul li a:hover {
-    color: #fc0707;
+
+.div span {
+    height: 10px;
+    width: 10px;
 
 }
-main {
-    padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
-    font-size: 16px;
-    line-height: 1.6;
+
+.about-me {
+    text-align: justify;
+    color: var(--text);
+    padding: 8px;
 }
-main section h3 {
-    margin-bottom: 20p;
-    color: #2c3e50 ;
-    font-size: large;
+
+section h2 {
+    background-color: var(--primary);
 }
-main section p {
-    margin-bottom: 10px;
+
+.skills-list {
+    display: flex;
+    justify-content: center;
+    color: var(--accebte);
+    
 }
+
 footer {
-    background-color: #34495e;
-    color: white;
+    background-color: var(--text);
+    color: var(--light);
+    padding: 2px;
     text-align: center;
-    padding: 10px;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
-}
-
-@media screen and (max-windth: 600px) {
-    nav ul {
-        flex-direction: column;
-    }
-    nav ul li {
-        margin: 10px 0;
-    }
-    main {
-        padding: 10px;
-        font-size: 14px;
-    }
-    header {
-        padding: 10px;
-    }
-    footer {
-        position: static;
-    }
-    
 }
